@@ -1,0 +1,120 @@
+body {
+    min-height: 100vh;
+}
+.header {
+    position: relative;
+    background-image: url('white_grid_background.jpg');
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    padding: 30px; 
+    text-align: center;
+}
+/* EXP nav  bookshelf, nav ul = a row of slots, nav li = each individual book slot, nav a = the book in the slot */
+nav ul {
+    list-style-type: none; 
+    text-align: right; 
+    margin-top: 20px;
+    margin-right: 60px;
+}
+nav li {
+    font-family: Averia Serif Libre, italic;
+    height: 37px;
+    margin-top: 2px; 
+    display: inline-block;
+    margin-left: 20px;
+}
+nav a {
+    justify-content: center;
+    font-size: 27px; 
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}
+.rounded-box {
+    border-radius: 12px;
+    background-color: white;
+    border: 2px solid rgb(86,86,86);
+}
+.header .logo {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 60px;
+}
+p {
+    color: rgb(74, 74, 74);
+    font-family: 'Averia Serif Libre', italic;
+}
+h1 {
+    color: rgb(67, 67, 67);
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    margin-bottom: -17px;
+}
+h2 {
+    color:rgb(103, 103, 103);
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
+    margin-top: -2px;
+}
+
+.hello {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: -5px; 
+}
+
+.welcome {
+    font-size: 20px;
+    text-align: center;
+    margin: 3px; 
+}
+
+.line {
+    font-size: 22px; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.scholarship-button {
+    align-items: right;
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+#scholarship-dialog form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scholarship-dialog input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+#scholarship-dialog button {
+    padding: 8px;
+}
+
+#results {
+    max-height: 400px;
+    border: 5px solid rgb(67, 67, 67);
+    padding: 10px;
+    margin-top: 10px;
+    overflow-y: auto; /* Add a scrollbar if content exceeds max height */
+}
+
+#results {
+    max-height: 400px;
+    border: 5px solid rgb(67, 67, 67);
+    padding: 10px;
+    margin-top: 10px;
+    overflow-y: auto;
+}

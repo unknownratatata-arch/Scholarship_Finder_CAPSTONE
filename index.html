@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scholarship Finder</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Homemade+Apple&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head> 
+    <body>
+        <section class="header">
+            <img src="icon.png" alt="logo" class="logo">
+            <div class="rounded-box">
+                <nav> 
+                    <ul>
+                        <li><a href='#'>Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Scholarship Finder</h1>
+            <h2>A Capstone Project</h2>
+        </section>
+        <hr style = "height: 8px; background: rgb(86,86,86); border: none;">
+        <p class="hello">Hello, and welcome to the Scholarship Finder!</p>
+        <p class="welcome"> This is a tool that helps you find scholarships that you are eligible for. To get started, click on the "Filtering" tab and answer the questions to find scholarships that match your criteria.</p>
+        <div class="container">
+            <p class="line">Options</p>
+            <button onclick=showScholarshipDialog() class="scholarship-button">Filter</button>
+        </div>
+        <div id="results"></div>
+        <dialog id="scholarship-dialog"> <!--pop up to filter through scholarships--> 
+            <h3>Filter</h3>
+             <form id="filter-form">
+                <input type="text" id="field-of-study" placeholder="Field of study"> <!--Self closing-->
+                <input type="text" id="min-amount" placeholder="Minimum Amount ($)">
+                <input type="text" id="min-gpa" placeholder="Minimum GPA">
+                <button onclick="closeScholarshipDialog()" type="button">Cancel</button> <!--button to close the dialog without submitting-->
+                <button type="submit">Submit</button> <!--button to submit the form and close--> 
+            </form>
+        </dialog> 
+
+        <script src="data.js">  
+            function showScholarshipDialog() { 
+                dialog.showModal() 
+            }
+            function closeScholarshipDialog() { 
+                dialog.close()
+            }
+        </script>
+
+    </body>
+</html>
